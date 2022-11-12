@@ -4,3 +4,4 @@ Focuses
   - governance contracts
   - flash loans
   - runtime
+  - infinite loops
