@@ -20,6 +20,17 @@ Auditing Framework
 - Incident Audit
   - Exploit review
 
+Code Analyses Techniques
 - Specification Analysis
   - Auditor analizes it manually.
   - Specification that this code does exactly what it is supposed to do.
+- Doc Analysis
+  - Smart contracts should use NatSpec
+- Static Analysis
+  - Technique of anlyzing program properties withous actually executing the program
+- Property-based testing
+  - Known as fuzzing
+  - Provides huge amount of random and unexpected input values to smart contract functions in order to break them (crashes, uncaught exceptions, memory leaks, etc.)
+  - Tools: Echidna, Foundry built-in fuzzer, Harvey
+- Symbolic Analysis
+  - Technique of checking for program correctness, by using symbolic inputs to represent set 
