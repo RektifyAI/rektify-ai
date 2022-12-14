@@ -19,3 +19,7 @@ Auditing Framework
   - Constantly reviewing project updates
 - Incident Audit
   - Exploit review
+
+- Specification Analysis
+  - Auditor analizes it manually.
+  - Specification that this code does exactly what it is supposed to do.
