@@ -7,3 +7,15 @@ Languages:
 - Rust
 - Clarity (smart contracts on Bitcoin)
 - sCrypto (smart contracts on Bitcoin SV)
+
+Auditing Framework
+- New Audit
+  - New project that has not recieved an audit before
+- Repeat Audit
+  - A project that has had a previous audit from your firm comes back again. New features.
+- Fix Audit
+  - Review fix of bug(s) from prior audit(s)
+- Retainer Audit
+  - Constantly reviewing project updates
+- Incident Audit
+  - Exploit review
