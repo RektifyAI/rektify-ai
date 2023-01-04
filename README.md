@@ -5,7 +5,6 @@ Dynamic code analysis tool powered by machine learning to enable optimal securit
 
 # Languages
 - Clarity
-- sCrypt
 
 # Features
 
