@@ -1,0 +1,63 @@
+testCase_ID ,filename,Title,code ,bug,type
+0,modifier_reentrancy.sol,Reentrancy,"pragma solidity ^0.5.0;
+
+contract ModifierEntrancy {
+
+  mapping (address => uint) public tokenBalance;
+  string constant name = ""Nu Token"";
+  Bank bank;
+  
+  constructor() public{
+      bank = new Bank();
+  }
+
+  //If a contract has a zero balance and supports the token give them some token
+  function airDrop() hasNoBalance supportsToken  public{
+    tokenBalance[msg.sender] += 20;
+  }
+  
+  //Checks that the contract responds the way we want
+  modifier supportsToken() {
+    require(keccak256(abi.encodePacked(""Nu Token"")) == bank.supportsToken());
+    _;
+  }
+  
+  //Checks that the caller has a zero balance
+  modifier hasNoBalance {
+      require(tokenBalance[msg.sender] == 0);
+      _;
+  }
+}
+
+contract Bank{
+
+    function supportsToken() external returns(bytes32) {
+        return keccak256(abi.encodePacked(""Nu Token""));
+    }
+
+}",TRUE,SWC-107
+1,simple_dao.sol,Reentrancy,"/*
+ * @source: http://blockchain.unica.it/projects/ethereum-survey/attacks.html#simpledao
+ * @author: Atzei N., Bartoletti M., Cimoli T
+ * Modified by Josselin Feist
+ */
+pragma solidity 0.4.24;
+
+contract SimpleDAO {
+  mapping (address => uint) public credit;
+    
+  function donate(address to) payable public{
+    credit[to] += msg.value;
+  }
+    
+  function withdraw(uint amount) public{
+    if (credit[msg.sender]>= amount) {
+      require(msg.sender.call.value(amount)());
+      credit[msg.sender]-=amount;
+    }
+  }  
+
+  function queryCredit(address to) view public returns(uint){
+    return credit[to];
+  }
+}",TRUE,SWC-107
