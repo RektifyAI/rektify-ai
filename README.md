@@ -3,10 +3,7 @@ Dynamic code analysis tool powered by machine learning to enable optimal securit
 
 Languages: 
 - Solidity (EVM-bytecode)
-- Go
-- Rust
 - Clarity (smart contracts on Bitcoin)
-- sCrypto (smart contracts on Bitcoin SV)
 
 Auditing Framework
 - New Audit
