@@ -1,5 +1,5 @@
 testCase_ID ,filename,Title,code ,bug,type
-0,guess_the_random_number.sol,Weak Sources of Randomness from Chain Attributes,,TRUE,SWC-120
+0,guess_the_random_number.sol,Weak Sources of Randomness from Chain Attributes,TRUE,SWC-120
 ,,,"/*
  * @source: https://capturetheether.com/challenges/lotteries/guess-the-random-number/
  * @author: Steve Marx
