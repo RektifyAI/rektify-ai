@@ -1,4 +1,4 @@
-## Smart Contract Vulnerability Semi-supervise Learning Repo
+## Smart Contract Vulnerability Semi-supervised Learning Repo
 
 <b> Primary Vulnerabilities </b>
   - Timestamp Dependency
