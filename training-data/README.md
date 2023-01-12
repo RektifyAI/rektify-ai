@@ -1,6 +1,6 @@
 ## Smart Contract Vulnerability Semi-supervise Learning Repo
 
-Focuses
+<b> Primary Vulnerabilities </b>
   - Timestamp Dependency
   - Access Control
   - Gas Optimization
