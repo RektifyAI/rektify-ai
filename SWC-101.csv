@@ -1,0 +1,116 @@
+testCase_ID ,filename,Title,code ,bug,type
+0,integer_overflow_mapping_sym_1.sol,Integer Overflow and Underflow,"//Single transaction overflow
+
+pragma solidity ^0.4.11;
+
+contract IntegerOverflowMappingSym1 {
+    mapping(uint256 => uint256) map;
+
+    function init(uint256 k, uint256 v) public {
+        map[k] -= v;
+    }
+}",TRUE,
+1,integer_overflow_minimal.sol,Integer Overflow and Underflow,"//Single transaction overflow
+//Post-transaction effect: overflow escapes to publicly-readable storage
+
+pragma solidity ^0.4.19;
+
+contract IntegerOverflowMinimal {
+    uint public count = 1;
+
+    function run(uint256 input) public {
+        count -= input;
+    }
+}",TRUE,
+2,integer_overflow_mul.sol,Integer Overflow and Underflow,"//Single transaction overflow
+//Post-transaction effect: overflow escapes to publicly-readable storage
+
+pragma solidity ^0.4.19;
+
+contract IntegerOverflowMul {
+    uint public count = 2;
+
+    function run(uint256 input) public {
+        count *= input;
+    }
+}",TRUE,
+3,integer_overflow_multitx_multifunc_feasible.sol,Integer Overflow and Underflow,"/*
+ * @source: https://github.com/ConsenSys/evm-analyzer-benchmark-suite
+ * @author: Suhabe Bugrara
+ */
+
+//Multi-transactional, multi-function
+//Arithmetic instruction reachable
+
+pragma solidity ^0.4.23;
+
+contract IntegerOverflowMultiTxMultiFuncFeasible {
+    uint256 private initialized = 0;
+    uint256 public count = 1;
+
+    function init() public {
+        initialized = 1;
+    }
+
+    function run(uint256 input) {
+        if (initialized == 0) {
+            return;
+        }
+
+        count -= input;
+    }
+}",TRUE,
+4,integer_overflow_multitx_onefunc_feasible.sol,Integer Overflow and Underflow,"/*
+ * @source: https://github.com/ConsenSys/evm-analyzer-benchmark-suite
+ * @author: Suhabe Bugrara
+ */
+
+//Multi-transactional, single function
+//Arithmetic instruction reachable
+
+pragma solidity ^0.4.23;
+
+contract IntegerOverflowMultiTxOneFuncFeasible {
+    uint256 private initialized = 0;
+    uint256 public count = 1;
+
+    function run(uint256 input) public {
+        if (initialized == 0) {
+            initialized = 1;
+            return;
+        }
+
+        count -= input;
+    }
+}",TRUE,
+5,integer_overflow_multitx_onefunc_infeasible.sol,Integer Overflow and Underflow,"/*
+ * @source: https://github.com/ConsenSys/evm-analyzer-benchmark-suite
+ * @author: Suhabe Bugrara
+ */
+
+//Multi-transactional, single function
+//Overflow infeasible because arithmetic instruction not reachable
+
+pragma solidity ^0.4.23;
+
+contract IntegerOverflowMultiTxOneFuncInfeasible {
+    uint256 private initialized = 0;
+    uint256 public count = 1;
+
+    function run(uint256 input) public {
+        if (initialized == 0) {
+            return;
+        }
+
+        count -= input;
+    }
+}",TRUE,
+6,overflow_simple_add.sol,Integer Overflow and Underflow,"pragma solidity 0.4.24;
+
+contract Overflow_Add {
+    uint public balance = 1;
+
+    function add(uint256 deposit) public {
+        balance += deposit;
+    }
+}",TRUE,
