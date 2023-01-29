@@ -1,11 +1,11 @@
 ## Smart Contract Vulnerability Semi-supervised Learning Repo
 
-<b> Primary Vulnerabilities </b>
+<b> Primary SC Vulnerabilities </b>
   - Timestamp Dependency
   - Access Control
   - Gas Optimization
   - Infinite Loops
-  - Reentrancy
+  - Re-entrancy
   - Flash Loan Attacks
   - Oracle Manipulation
   - Visibility
