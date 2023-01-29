@@ -1,6 +1,6 @@
 ## Smart Contract Vulnerability Semi-supervised Learning Repo
 
-<b> Primary SC Vulnerabilities </b>
+<b> Primary Smart Contract Vulnerabilities </b>
   - Timestamp Dependency
   - Access Control
   - Gas Optimization
