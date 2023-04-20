@@ -10,3 +10,4 @@
   - Oracle Manipulation
   - Visibility
   
+Source: [SWC Registry](https://swcregistry.io)
