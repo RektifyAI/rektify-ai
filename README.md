@@ -17,7 +17,7 @@ The more data that is collected on isolated attack instances on protocols, the m
 - Retainer Audit
   - Constantly reviewing project updates
 - Incident Audit
-  - Exploit review
+  - Comprehensive exploit review
 
 <b> Code Analyses Techniques </b>
 - Specification Analysis
