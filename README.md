@@ -21,7 +21,7 @@ The more data that is collected on isolated attack instances on protocols, the m
 
 <b> Code Analyses Techniques </b>
 - Specification Analysis
-  - Auditor analizes it manually.
+  - Auditor analyzes it manually.
   - Specification that this code does exactly what it is supposed to do.
 - Doc Analysis
   - Smart contracts should use NatSpec
