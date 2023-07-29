@@ -5,9 +5,10 @@
   - Access Control
   - Gas Optimization
   - Infinite Loops
-  - Re-entrancy
+  - Reentrancy
   - Flash Loan Attacks
   - Oracle Manipulation
   - Visibility
+  - Race Condition
   
 Source: [SWC Registry](https://swcregistry.io)
