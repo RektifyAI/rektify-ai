@@ -11,4 +11,6 @@
   - Visibility
   - Race Condition
   
-Source: [SWC Registry](https://swcregistry.io)
+Sources: 
+- [SWC Registry](https://swcregistry.io)
+- [SmartBugs Wild Dataset](https://github.com/smartbugs/smartbugs-wild/tree/master)
