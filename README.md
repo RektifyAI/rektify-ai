@@ -6,7 +6,7 @@ The more data that is collected on isolated attack instances on protocols, the m
 <b> Languages: </b>
 - Solidity (EVM-bytecode)
 - Rust
-- Clarity (smart contracts on Bitcoin)
+- Vyper
 
 <b> Auditing Framework </b>
 - New Audit
