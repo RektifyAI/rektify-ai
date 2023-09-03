@@ -1,5 +1,5 @@
 # Rektify AI
-Dynamic code analysis tool powered by machine learning to enable optimal security smart contracts. As the blockchain space grows, so does the amount of rich data-points generated from technical attacks. 
+Code analysis tool powered by machine learning to enable optimal security smart contracts. As the blockchain space grows, so does the amount of rich data-points generated from technical attacks. 
 
 The more data that is collected on isolated attack instances on protocols, the more likely we can train models to defend against attacks similar to the adversarial attack framework used against ML models.
 
