@@ -7,6 +7,7 @@
   - Gas Optimization
   - Infinite Loops
   - Reentrancy
+    - Cross-function
   - Flash Loan Attacks
   - Oracle Manipulation
   - Visibility
