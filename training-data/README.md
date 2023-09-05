@@ -11,7 +11,7 @@
     - Cross-contract
     - Read-only
     - Single-function
-    - Single-contract
+    - Cross-chain
   - Flash Loan Attacks
   - Oracle Manipulation
   - Visibility
