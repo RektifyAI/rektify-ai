@@ -2,6 +2,7 @@
 
 <b> Primary Smart Contract Vulnerabilities </b>
   - Timestamp Dependency
+  - DoS
   - Access Control
   - Gas Optimization
   - Infinite Loops
