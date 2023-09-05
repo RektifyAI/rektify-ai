@@ -8,6 +8,10 @@
   - Infinite Loops
   - Reentrancy
     - Cross-function
+    - Cross-contract
+    - Read-only
+    - Single-function
+    - Single-contract
   - Flash Loan Attacks
   - Oracle Manipulation
   - Visibility
