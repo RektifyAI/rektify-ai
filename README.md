@@ -28,6 +28,7 @@ The more data that is collected on isolated attack instances on protocols, the m
   - Smart contracts should use NatSpec
 - Static Analysis
   - Technique of anlyzing program properties withous actually executing the program
+  - Tools: Slither, Mythril, MythX, Manticore
 - Property-based testing
   - Known as fuzzing
   - Provides huge amount of random and unexpected input values to smart contract functions in order to break them (crashes, uncaught exceptions, memory leaks, etc.)
